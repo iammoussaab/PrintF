@@ -1,4 +1,21 @@
-#include <main.h>
+#include "main.h"
+
+int _printf(const char *format, ...);
+
+int main()
+{
+    int num = 42;
+    char *str = "Hello, world!";
+
+    printf("Number: %d\n", num);
+    printf("String: %s\n", str);
+
+    // Use _printf with your custom format
+    _printf("Number: %d\n", num);
+    _printf("String: %s\n", str);
+
+    return 0;
+}
 
 
 /**
@@ -56,4 +73,3 @@ int _printf(const char *format, ...)
 
     return printed_chars;
 }
-
